@@ -231,3 +231,53 @@ footer{
 .boxprojeto p{
     margin-top: 10px;
 }
+
+/*Lojinha 1*/
+
+
+.lojinha1 {
+    width: 700px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;    
+}
+
+.lojinha1{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.lojinha1 h4{
+    margin-top: -80px;
+    margin-left: 250px;
+    font-size: 40px;
+    color:#696969;
+}
+
+.boxlojinha1{
+    width: 200px;
+    margin-top: 100px;
+    display: inline-block;
+    margin-right: 30px;    
+}
+
+.boxlojinha1 img{
+    width: 100%;
+    height: 200px;    
+}
+
+button{
+    border-radius: 10%;
+    border: 1px solid #696969;
+    font-size: 20px;
+    width: 180px;  
+   margin-top: 30px;
+    
+}
+
+button:hover{
+    background-color: #696969;
+}
+
+
