@@ -280,4 +280,47 @@ button:hover{
     background-color: #696969;
 }
 
+.formulario{
+    float: right;
+    margin-right: 300px;
+    margin-top: 30px;
+    color: #333;
+   }
+
+.formulario p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+label{
+    display:block;
+    font-size: 20px; 
+    margin-top: 20px;
+}
+
+#button{
+    margin-top: 10px;
+    background-color: #00CED1;
+    width: 50px;
+    color: whitesmoke;
+}
+
+#button:hover{
+    background-color:#1E90FF;
+}
+
+.endereco{
+    margin-top: 30px;
+}
+
+.endereco h3{
+    font-size: 30px;
+    color: #333;
+}
+
+.endereco h4{
+    font-size: 20px;
+}
+
+
 
