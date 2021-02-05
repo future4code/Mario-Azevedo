@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
 }
 
 header{
@@ -45,6 +46,36 @@ header p{
     text-decoration: none;
     margin-top: 20px;
     text-align: center;
+}
+
+.redesocial{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;   
+}
+
+.instagran img{
+    width: 100px;  
+    margin-right: 10px; 
+}
+
+.linkedin img{
+    width: 60px;
+   margin-left: 20px;       
+}
+
+.instagran h4{
+    color: whitesmoke;
+    margin-left: 10px; 
+    margin-top: 4px; 
+    text-decoration: none;  
+}
+
+.linkedin h4{
+    color: whitesmoke;
+    margin-left: 15px;    
 }
 
 .formacao {
@@ -122,4 +153,9 @@ header p{
     margin-left: 60px;
     font-size: 18px;
     width: 65%;
+}
+footer{
+    width:100%;
+    height: 50px;
+    background-color: #00CED1;
 }
