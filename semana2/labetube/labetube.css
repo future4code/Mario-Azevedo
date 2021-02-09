@@ -1,103 +1,55 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #CAE1FF;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 60px 1fr 30px;
+    padding: 0;
 }
 
 header{
-    display: grid;
-    grid-column: 2/3;   
-    background-color: #FF8C00;
-    height: 100%;
-   
-   }
-
- .topo{
     display: flex;
-    height: 100%;
-    
-            
- }
-
- .pesquisa{
-     display: flex;
-     flex-grow:3;   
-     align-items: center;   
-     justify-content: center;
- }
-
- .logar{
-    display: flex;   
-    align-items: center;  
- }
-
-.topo img{
-    width: 25px;   
+    justify-content: space-between;
+    background-color: khaki;    
 }
 
-.topo input{
-    width: 70%;
-    height: 30px;    
-}
-
-.logar img{
-    width: 60px;
-}
-
-.logar button{
-    width: 100px;
-    height: 30px;
-}
-
-.menu-logo{
-    display: flex;
-    flex-grow: 1;
-    background-color: #FFA500;
-    grid-row: 1/2;
-    color: whitesmoke;
+.logo {
     font-size: 30px;
-    height: 100%;
-    justify-content: center;
-}
-
-.menu-logo img{
-    width: 50px;
-}
-
-.opcoes{
     display: flex;
-    flex-direction: column;
-    grid-row: 2/3;
-    background-color: #FF8C00;
-    color: whitesmoke;    
     align-items: center;
-    height: 100%;
-    justify-content: center;
+    margin-left: 25px;    
 }
 
+.logo p{
+    margin-left: 15px;
+}
 
+.logo img{
+    width:60px;
+}
 
-.bot{
+.pesquisa{
     display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-.opcoes img{
-    width: 30px;
-    margin-right: 5px;
+    
 }
 
-.opcoes hr{
-    margin-top: 10px;
-    width: 200px ;
-    color: black;
+.pesquisa img{
+    width: 20px;
+    margin: 0 5px
+}
+
+.pesq , .login{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.pesquisa input{
+    width: 500px;
+}
+
+.login{
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+.login img{
+    width: 50px;
 }
 
