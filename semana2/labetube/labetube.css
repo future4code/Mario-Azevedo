@@ -84,9 +84,10 @@ header{
 }
 
 
+
 .bot{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
 }
 .opcoes img{
