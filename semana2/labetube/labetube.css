@@ -1,55 +1,141 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: khaki;    
-}
-
-.logo {
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: 25px;    
-}
-
-.logo p{
-    margin-left: 15px;
-}
-
-.logo img{
-    width:60px;
-}
-
-.pesquisa{
-    display: flex;
+    box-sizing: border-box;
     
 }
 
-.pesquisa img{
-    width: 20px;
-    margin: 0 5px
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 10vh 80vh 10vh;
 }
 
-.pesq , .login{
+header{    
+    grid-column: 1/3; 
+    display: flex;   
+    height: 100%;
+}
+
+.logo{
+    height: 100%;    
+    font-size: 30px;
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    justify-content: start;
+    margin-left: 10px;
 }
 
-.pesquisa input{
-    width: 500px;
+.logo img{
+    width: 60px;
+}
+
+.logo p{
+    margin-left: 10px;
+}
+
+.busca img{
+    width: 25px;
+    margin: 0 5px;
+}
+
+.busca input{
+    width:50%;
+    margin-left: 200px;
+}
+
+.busca{
+    display: flex;   
+    align-items: center; 
+    width: 80%;
 }
 
 .login{
-    border: 1px solid #ccc;
-    color: #ccc;
+    display: flex;   
+    align-items: center; 
+    width: 15%;
+    border: 1px solid blue;
+    color:blue;
+
 }
 
 .login img{
     width: 50px;
 }
+
+.pesquisa{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;    
+}
+
+main{
+    display: grid;
+    grid-gap: 10px 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 30px;
+}
+
+section{
+    display: flex;
+    grid-row: 2/3;
+    flex-direction: column;
+    height: 100%;
+    justify-items: center; 
+}
+
+.opcao{
+    color: #333;
+    padding-left: 30px;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    margin-top: 20px;
+  
+}
+.opcao img{
+    width: 30px;
+}
+
+section hr{
+    margin-top: 20px;
+}
+
+footer{
+display: flex;
+grid-column: 1/3;
+font-size: 15px;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+footer h3{
+    color:#CD0000;
+    padding-right: 5px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: repeat(4,1fr); 
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+main video{
+    width:200px;
+    height: 100px;
+}
+
+main .videos{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
 
