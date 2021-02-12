@@ -1,0 +1,238 @@
+body {
+    
+    padding: 0;
+    margin: 0;
+   }
+ 
+   *{box-sizing: border-box;
+}
+
+#first-block {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: 15vh;
+    grid-column: 1/-1;
+    grid-row: 1/-1;   
+}
+
+.box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    margin: 4vh;
+    grid-gap: 4vh;
+    height: 30vr;    
+}
+
+.blue-block {  
+    background-color: blue;
+    height: 30vh; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+ 
+}
+ 
+.yellow-block {
+    background-color: yellow;
+    height: 30vh; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+ 
+
+.green-block {
+    background-color:green;
+    height: 30vh; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.box2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 60vh;
+    margin: 4vh;
+    grid-gap: 4vh;
+    
+}
+ 
+.black-block {
+    background-color: black;
+    color: white;   
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.box4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 15vh;
+    margin: 4vh;
+    grid-gap: 4vh;
+}
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+
+    .box1{
+      
+            display:grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows:  repeat(6, 1fr);                       
+    }
+
+    .box2{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;  
+        height: 25vh;
+           
+    }
+     
+    .blue-block {  
+        background-color: blue;
+        height: 10vh; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    .yellow-block {
+        background-color: yellow;
+        height: 10vh; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .green-block {
+        background-color:green;
+        height: 10vh; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .black-block {
+        background-color: black;
+        color: white;   
+       
+        justify-content: center;
+        align-items: center; 
+       
+    }
+    
+    .box4{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+       
+    }
+    
+    .white-block {
+        background-color: white;
+        border: 1px solid black;       
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    } 
+       
+        
+    }
+
+    @media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+        .box1{
+          
+                display:grid;
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows:  repeat(4, 1fr);                       
+        }
+    
+       
+         
+        .blue-block {  
+            background-color: blue;
+            height: 10vh; 
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+         
+        .yellow-block {
+            background-color: yellow;
+            height: 10vh; 
+            display: grid;
+            justify-content: center;
+            align-items: center;
+         }
+         
+         .green-block {
+            background-color:green;
+            height: 10vh; 
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/-1;
+        }
+        .box2{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr;  
+            height: 25vh;
+               
+        }
+        
+        .black-block {
+            background-color: black;
+            color: white;   
+           
+            justify-content: center;
+            align-items: center; 
+           
+        }
+        
+        .box4{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            
+           
+        }
+        
+        .white-block {
+            background-color: white;
+            border: 1px solid black;       
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+           } 
+
+        .box4 :nth-child(3){
+            grid-column: 1/-1;
+        }
+
+           
+            
+        }
