@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    
+}
+
+header{
+    width:100%;
+    height: 50px;
+    background-color: #00CED1;
+}
+
+header p{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu{
+    width: 300px;
+    height: 1300px;
+    background-color:#48D1CC;
+    display: inline-block;
+}
+
+
+.foto img{
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+.menu-box nav{
+   
+   padding-top: 20px;
+   color: whitesmoke;
+   font-size: 30px;
+   width: 100%;
+    }
+
+.menu-box li{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-box li:hover{
+    background-color:  #00CED1;   
+}
+
+.redesocial{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;   
+}
+
+.instagran img{
+    width: 100px;  
+    margin-right: 10px; 
+}
+
+.linkedin img{
+    width: 60px;
+   margin-left: 20px;       
+}
+
+.instagran h4{
+    color: whitesmoke;
+    margin-left: 10px; 
+    margin-top: 4px; 
+    text-decoration: none;  
+}
+
+.linkedin h4{
+    color: whitesmoke;
+    margin-left: 15px;    
+}
+
+.apresentacao{
+    width: 400px;
+    display: inline-block;
+    margin-left: -20px;
+    margin-top: -50px;
+   
+       
+}
+
+.apresentacao img{
+    width: 90%;
+    height: 300px;
+   
+}
+
+.apresentacao h3{
+    margin-top:-220px;
+    margin-left: 100px;
+    font-size: 18px;
+    width: 40%;
+}
+
+.formacao {
+    width: 700px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;    
+}
+
+.formacao img{
+    width: 100%;
+    height: 100px;
+}
+
+.formacao h4{
+    margin-top: -80px;
+    margin-left: 250px;
+    font-size: 40px;
+    color:#696969;
+}
+
+.boxformacao{
+    width: 200px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 30px;    
+}
+
+.boxformacao img{
+    width: 100%;
+    height: 200px;
+}
+
+.boxformacao h3{
+    margin-top: -160px;
+    margin-left: 11px;
+    font-size: 18px;
+    width: 90%;
+}
+
+.experiencia {
+    width: 700px;
+    float: right;
+    margin-right: 150px;
+    margin-top: -850px; 
+}
+
+.experiencia img{
+    width: 100%;
+    height: 100px;
+}
+
+.experiencia h4{
+    margin-top: -80px;
+    margin-left: 250px;
+    font-size: 40px;
+    color:#696969;
+}
+
+.boxexperiencia{
+    width: 300px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 30px;    
+}
+
+.boxexperiencia img{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.boxexperiencia h3{
+    margin-top: -200px;
+    margin-left: 60px;
+    font-size: 18px;
+    width: 65%;
+}
+footer{
+    width:100%;
+    height: 50px;
+    background-color: #00CED1;
+}
+
+
+/*Página Projetos*/
+
+.projeto {
+    width: 700px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;    
+}
+
+.projeto img{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.projeto h4{
+    margin-top: -80px;
+    margin-left: 250px;
+    font-size: 40px;
+    color:#696969;
+}
+
+.boxprojeto{
+    width: 200px;
+    margin-top: 100px;
+    display: inline-block;
+    margin-right: 30px;    
+}
+
+.boxprojeto img{
+    width: 100%;
+    height: 200px;    
+}
+
+.boxproejto h3{
+ padding-top: 100px;
+    font-size: 18px;
+    width: 90%;
+}
+
+.boxprojeto p{
+    margin-top: 10px;
+}
+
+/*Lojinha 1*/
+
+
+.lojinha1 {
+    width: 700px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;    
+}
+
+.lojinha1{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.lojinha1 h4{
+    margin-top: -80px;
+    margin-left: 250px;
+    font-size: 40px;
+    color:#696969;
+}
+
+.boxlojinha1{
+    width: 200px;
+    margin-top: 100px;
+    display: inline-block;
+    margin-right: 30px;    
+}
+
+.boxlojinha1 img{
+    width: 100%;
+    height: 200px;    
+}
+
+button{
+    border-radius: 10%;
+    border: 1px solid #696969;
+    font-size: 20px;
+    width: 180px;  
+   margin-top: 30px;
+    
+}
+
+button:hover{
+    background-color: #696969;
+}
+
+.formulario{
+    float: right;
+    margin-right: 300px;
+    margin-top: 30px;
+    color: #333;
+   }
+
+.formulario p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+label{
+    display:block;
+    font-size: 20px; 
+    margin-top: 20px;
+}
+
+#button{
+    margin-top: 10px;
+    background-color: #00CED1;
+    width: 50px;
+    color: whitesmoke;
+}
+
+#button:hover{
+    background-color:#1E90FF;
+}
+
+.endereco{
+    margin-top: 30px;
+}
+
+.endereco h3{
+    font-size: 30px;
+    color: #333;
+}
+
+.endereco h4{
+    font-size: 20px;
+}
+
+.apresentacao2{
+    margin-top: 70px;
+}
+
+.apresentacao3{
+    margin-top: 80px;
+}
+
+.apresentação3 > h3{
+    margin-top: -20px;
+}
+
