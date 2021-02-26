@@ -1,4 +1,4 @@
-/**
+/* /* *
  * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
  * 
  * 
@@ -12,7 +12,7 @@
  */
 
 //Inicio do jogo
-
+/*
 console.log("Bem vindo ao jodo de Blackjack!")
 
 if(confirm('Quer iniciar uma nova rodada?')){
@@ -43,4 +43,4 @@ if(confirm('Quer iniciar uma nova rodada?')){
 
    }else{
    console.log("O jogo acabou")
-}
+} */
