@@ -61,9 +61,20 @@ informacao()
 let numeros2 = (numero3,numero4) => {
     if(numero3>=numero4){
         let resultado = true
-        console.log(resultado)
+        console.log('Exercício 5 (b): ',resultado)
     }
 }
 
 numeros2(4,4)
 
+//(c)
+
+
+
+let repete = (nome) =>{
+    for(let contador = 0; contador <10; contador ++){
+        console.log(nome)
+    }
+    }
+
+repete('Resposta Exercício 5 (c): Mário')
