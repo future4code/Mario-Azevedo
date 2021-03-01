@@ -21,79 +21,49 @@ x = valores
 ArrayFinal = quadrados */
 
 //Exercício 4
+//(a)
 
-//a)
-let informacoes = () =>{
-    console.log("Resposta Exercício 4 (a): Eu sou Mário, tenho 23 anos, moro em Paraíba do sul e sou Estudante")
-}
-informacoes()
-
-//b)
-
-function informacao(nome, idade, endereco, estudante){
-    console.log('Resposta Exercício 4 (b):Eu sou ',nome,' tenho ',idade,' anos, moro em ',endereco,' e sou',estudante,'.')
+let informacao = () => {
+    console.log('Exercício 4 (a): Eu sou o Mário , tenho 23 anos, moro na cidade de Paraíba do Sul e estou estudante.')
 }
 
-informacao('Mário', 36, 'paraiba', 'estudante')
+informacao()
 
-//Exercício 5 
+//(b)
 
-//a
+  let nome  
+  let idade  
+  let endereco  
+  let estudante 
+  
+  function informacao2(nome, idade, endereco, estudante){
+      if(estudante === true){
+          console.log('Exercício 4 (b): Eu sou o ',nome,' tenho ',idade,' anos, moro na cidade de ',endereco,' e estou estudante','.')
+      }
 
-function numeros(num1,num2){
-    let soma = num1 + num2
-    console.log('Resultado Exercício 5 (a): ', soma)
+  }
+ 
+  informacao2('Mário', 36, 'Paraíba do Sul', true)
 
-    
-}
+  //Exercício 5
+  //(a)
+  
+  let numeros = (numero1,numero2) => {
+      let soma = numero1 + numero2
+      console.log('Exercício5 (a): ',soma)
+      return soma
+  }
 
-numeros(8,4)
+  numeros(2,3)
 
+//(b)
 
-//b
-
-function numeros2(n1, n2){
-    
-    if (n1>=n2){
-        console.log('Resposta Exercício 5 (b): ',true)
-
-    }else{
-        console.log('Resposta Exercício 5 (b): ',false)
+let numeros2 = (numero3,numero4) => {
+    if(numero3>=numero4){
+        let resultado = true
+        console.log(resultado)
     }
- 
-    return
 }
 
-numeros2(1,2)
+numeros2(4,4)
 
-//c
-
-let nome = "Mário"
-function repita(){
-    let contador =0
-    while (contador<10){
-    console.log('Resposta do Exercício 5 (c): ',nome)  
-    contador = contador +1}
-}
- 
-repita()
-
-//Exercício 6
-
-const numerais = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
-
-function recebe(){
-    let quantidade = []
-    quantidade.push(numerais)
-    console.log(quantidade)
-  
-
-    
-    return 
-}
-
-recebe()
-
-
-
-  
