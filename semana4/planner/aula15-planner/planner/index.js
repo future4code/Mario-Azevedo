@@ -1,9 +1,15 @@
-function criarTarefa(){
-    let tarefa = document.getElementById('tarefa')
-    let diaDaSemana = document.getElementById('dias-semana')
-    
-    console.log(tarefa.value)
-    console.log(diaDaSemana.value)
-    console.log('Funcionando')
 
+function criarTarefa(){
+    const tarefa = document.getElementById('tarefa')
+    const semana = document.getElementById('dias-semana')
+   
+    
+   
+document.getElementById(semana.value).innerHTML  +=`<p>${tarefa.value}`
+    tarefa.value = ""
 }
+
+
+
+ 
+      
