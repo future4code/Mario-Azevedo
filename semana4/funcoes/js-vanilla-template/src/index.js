@@ -78,3 +78,63 @@ let repete = (nome) =>{
     }
 
 repete('Resposta Exercício 5 (c): Mário')
+
+//Exercício 6
+
+//(a)
+
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+
+function quantidade(){
+    console.log('Resposta Exercicio 6 (a): ',array.length)
+}
+
+quantidade()
+
+//(b)
+
+function conferencia(valor){
+      if(valor%2 === 0){
+        console.log('Resposta Exercício 6 (b): Este número é par: ',true)
+    }else(
+        console.log('Esse número é par: ',false)
+    )
+
+}
+
+conferencia(20)
+
+//(c)
+
+let par = []
+function pares(){
+for (let lista of array){
+    
+    if(lista%2 === 0){
+        let resultado = (lista%2 ===0)
+        par.push(resultado)       
+        
+
+        
+    }
+    
+ }
+ console.log('Resposta Exercício 6 (c): A quantidade de números par é ',par.length)
+}
+
+
+pares(array)
+
+//(d)
+
+
+function compara(){
+    for (let listagem of array){
+        if(listagem%2===0){
+            console.log('Resposta Exercício 6 (d): Esse número é par')
+        }else(
+            console.log('Resposta Exercício 6 (d) Esse número é impar')
+        )
+    }}
+
+    compara(array)
