@@ -1,4 +1,4 @@
-/* Exercício 1
+/* /* Exercício 1
 a) Será impresso no console 10 e 50
 b) O código simplesmente rodaria, sem que fosse printado.
 Não apareceria nada no console.
@@ -19,7 +19,7 @@ e armazenando em arrayFinal os seus quadrados.
 Array = numeros
 x = valores
 ArrayFinal = quadrados */
-
+/*
 //Exercício 4
 //(a)
 
@@ -137,4 +137,27 @@ function compara(){
         )
     }}
 
-    compara(array)
+    compara(array) */
+
+
+
+    //----------Inicio desafio-------//
+
+//Exercício 1
+
+let idade = (valor) => {
+    let valor1 =valor 
+    console.log('Resposta Exercicio 1 : ',valor1)    
+ 
+    return valor
+    }
+
+idade(10)
+
+let soma = (valor1,valor2) =>{
+    let somados = valor1 + valor2
+    idade(somados)
+    
+}
+
+soma(3,4)
