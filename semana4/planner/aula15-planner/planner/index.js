@@ -1,15 +1,18 @@
-
 function criarTarefa(){
     const tarefa = document.getElementById('tarefa')
-    const semana = document.getElementById('dias-semana')
-   
+    const diasSemana = document.getElementById('dias-semana')
+    
+    if(tarefa.value ===""){
+        alert('Você não preencheu uma tarefa')
+        return
+    }
+
+    document.getElementById(diasSemana.value).innerHTML += `<p>${tarefa.value}`
+    tarefa.value = ""
     
    
-document.getElementById(semana.value).innerHTML  +=`<p>${tarefa.value}`
-    tarefa.value = ""
+       
+    
 }
 
 
-
- 
-      
