@@ -161,3 +161,19 @@ let soma = (valor1,valor2) =>{
 }
 
 soma(3,4)
+
+//Exercício 2
+
+const numeros = [0, 8, 23, 16, 10, 15, 41, 12, 13]
+
+let ex2 = (numero) => {
+    let par = []
+    if(numero%2===0){       
+        let valor = numero
+        par.push(valor)
+        
+    }
+    console.log(par)
+}
+
+ex2(numeros)
