@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="index.js" defer></script>
+    <script src="index.js" ></script>
     <link rel="stylesheet" href="styles.css">
     <title>Blog</title>
 </head>
 <body>
+    <header>Nosso Blog</header>
     <section id="formulario">
         <label for="titulo-post">Título:</label>
         <input type="text" id="titulo-post" >
@@ -22,14 +23,11 @@
         <label for="conteudo-post">Conteúdo:</label>
         <textarea id="conteudo-post" cols="30" rows="10"></textarea>
         
-       
+        <button onclick="criarPost()" target="_blank">Criar Post</button>
 
-        <button onclick="criarPost()">Criar Post</button>
+        <!--<a href="./post.html"><button onclick="criarPost()" target="_blank">Criar Post</button></a>-->
     </section>
 
-    <section id="container-de-posts">
-        <p>Nossas Postagens</p>
-        
-    </section>
+    
 </body>
 </html>
