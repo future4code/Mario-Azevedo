@@ -67,12 +67,15 @@ function retornaExpressoesBooleanas() {
   return respostas
 }
 
-/*
+
 //Exercício 7
 
 function retornaNNumerosPares(n) {
    // implemente sua lógica aqui
+  for(n; n<=)
+  
 }
+/*
 
 // Exercício 8
 
