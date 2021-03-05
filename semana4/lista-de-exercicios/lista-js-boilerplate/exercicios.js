@@ -38,13 +38,14 @@ function retornaMaiorNumero(array) {
    let numeromax = Math.max(...array)
    return numeromax
 }
-/*
+
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
    return array.length
 }
+/*
 
 //Exercício 6
 
