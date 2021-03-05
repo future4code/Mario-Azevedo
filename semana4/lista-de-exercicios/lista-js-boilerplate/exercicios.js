@@ -1,24 +1,23 @@
 //Exercício 1
 
-function inverteArray(array) {
+ function inverteArray(array) {
   // implemente sua lógica aqui
    return array.reverse()
-}
+} 
 
 //Exercício 2
 
-const array = [2,3,4,5,6]
-retornarNumerosParesElevadosADois(array)
-
-function retornaNumerosParesElevadosADois (array) {
+ function retornaNumerosParesElevadosADois (array) {
    // implemente sua lógica aqui
-   if(array%2 === 0){
-      const numerosParesElevadosAoQuadrado
-      console.log('teste',array)
-      return 
+   let paresQuadrados = []
+   for(let numeros of array){
+      if(numeros%2 === 0){
+         paresQuadrados.push(numeros*numeros)
+      }
    }
+   return paresQuadrados
 }
-/* 
+ 
 //Exercício 3
 
 function retornaNumerosPares (array) {
@@ -186,4 +185,4 @@ const contas = [
 
 function atualizaSaldo() {
   // implemente sua lógica aqui
-} */
+}
