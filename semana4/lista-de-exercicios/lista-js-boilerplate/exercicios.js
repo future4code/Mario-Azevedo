@@ -45,14 +45,29 @@ function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
    return array.length
 }
-/*
+
 
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
    // implemente sua lógica aqui
+ const booleano1 = true
+ const booleano2 = false
+ const booleano3 = !booleano2 
+ const booleano4 = !booleano3 
+ const respostas = []
+  let comparador1 = booleano1 && booleano2 && !booleano4 
+  let comparador2 = (booleano1 && booleano2) || !booleano3 
+  let comparador3 = (booleano2 || booleano3) && (booleano4 || booleano1)
+  let comparador4 = !(booleano2 && booleano3) || !(booleano1 && booleano3) 
+  let comparador5 = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3) 
+   
+  respostas.push(comparador1,comparador2,comparador3,comparador4,comparador5)
+
+  return respostas
 }
 
+/*
 //Exercício 7
 
 function retornaNNumerosPares(n) {
