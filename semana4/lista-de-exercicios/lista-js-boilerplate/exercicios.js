@@ -22,18 +22,28 @@
 
 function retornaNumerosPares (array) {
    // implemente sua lógica aqui
+   let apenasPares = []
+   for(let numeros of array){
+      if(numeros%2 ===0){
+         apenasPares.push(numeros)
+      }
+   }
+ return apenasPares
 }
 
-//Exercício 4
+/* /Exercício 4
 
 function retornaMaiorNumero(array) {
    // implemente sua lógica aqui
+   let numeromax = Math.max(...array)
+   return numeromax
 }
 
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
+   return array.length
 }
 
 //Exercício 6
@@ -185,4 +195,4 @@ const contas = [
 
 function atualizaSaldo() {
   // implemente sua lógica aqui
-}
+}  */
