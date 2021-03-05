@@ -31,14 +31,14 @@ function retornaNumerosPares (array) {
  return apenasPares
 }
 
-/* /Exercício 4
+//Exercício 4
 
 function retornaMaiorNumero(array) {
    // implemente sua lógica aqui
    let numeromax = Math.max(...array)
    return numeromax
 }
-
+/*
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
