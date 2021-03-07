@@ -68,3 +68,34 @@ let imprime10 = (mensagem) =>{
 }
 
 imprime10('Imprime 10 vezes')
+
+//Exercício 6
+
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+
+//(a)
+let quantidadeNoArray = (numeros) => {
+    console.log('Resposta 6 (a)', numeros.length)
+}
+quantidadeNoArray(array)
+
+//(b)
+
+let verificaSePar = (numero) => {
+    if(numero%2 === 0){
+        console.log('Resposta: 6 (b) :',true)
+    }
+}
+verificaSePar(2)
+
+//(c)
+let verificaArrayPar = (numeros) => {
+    let numerosPares = []
+    for(let numero of numeros){
+        if(numero%2 === 0){
+            numerosPares.push(numero)
+        }
+    }
+    console.log('Exercicio6 (c):', numerosPares.length)
+}
+verificaArrayPar(array)
