@@ -17,3 +17,9 @@
 //(b)
 //Amanda e Caio
 
+//Exercício 3
+//A função está verificando se os elementos são
+//pares, caso positivo, eleva ele ao quadrado
+//e armazena na varial arrayFinal.
+//O melhor nome seria paresQuadrados
+
