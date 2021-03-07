@@ -8,3 +8,12 @@
 //(b)
 //Caso retire os console não será apresentado 
 //nada em tela
+
+//Exercício 2
+
+//(a)
+//Darvas e Caio
+
+//(b)
+//Amanda e Caio
+
