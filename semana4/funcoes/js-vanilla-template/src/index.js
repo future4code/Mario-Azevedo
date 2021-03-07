@@ -38,3 +38,33 @@ let exercicio4b = (nome, idade, cidade, estudante) => {
 }
 exercicio4b('Caio', 23, 'São Paulo', 'sou')
 
+//Exercício 5
+
+//(a)
+let numeros = (numero1, numero2) =>{
+    let soma = numero1 + numero2
+    console.log('Exercicio 5 (a): ',soma)
+    return soma
+}
+numeros (1,1)
+
+//(b)
+let numeros2 = (numero3, numero4) => {
+    if(numero3 => numero4){
+        console.log("Exercício 5 (b): ",true)
+        return true
+    }
+}
+numeros2(3,3)
+numeros2(5,4)
+
+//(c)
+
+let imprime10 = (mensagem) =>{
+    let contador = 0
+    for(contador = 0; contador < 10; contador++){
+        console.log('Exerciocio 5 (c): ', mensagem)
+    }
+}
+
+imprime10('Imprime 10 vezes')
