@@ -117,3 +117,40 @@ let exercicio2D = (algo1, algo2) => {
     exercicio1D(soma)
 }
 exercicio2D(2,3)
+
+//Exercício 2 desafio
+
+const numero = [0, 8, 23, 16, 10, 15, 41, 12, 13]
+
+//(a)
+let numerosParesQuadrados = (numero) => {
+    let numerosQuadrados = []
+    for(let num of numero){
+        if(num%2 === 0){
+            let multiplica = (num * num)
+            numerosQuadrados.push(multiplica)
+        }
+    }
+    console.log('Resposta 2 Desafio (a): ', numerosQuadrados)
+}
+numerosParesQuadrados(numero)
+
+//(b)
+let maiorNumero = (numero) => {
+    console.log('Resposta 2 Desafio (b): ',Math.max(...numero))
+}
+maiorNumero(numero)
+
+//(c)
+
+let maiorIndex = (valor) =>{
+}
+
+
+//(d)
+
+let arrayInvertido = (numeros) =>{
+    console.log('Resposta 2 Desafio (d)', numeros.reverse())
+}
+
+arrayInvertido(numero)
