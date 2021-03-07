@@ -102,3 +102,18 @@ verificaArrayPar(array)
 
 //Iniciando DESAFIO
 
+//Exercicio 1 desafio
+
+//(1)
+let exercicio1D = (algo) => {
+    console.log("Exercicio 1 Desafio (1): ",algo)
+}
+exercicio1D('Funcionando')
+
+//(2)
+
+let exercicio2D = (algo1, algo2) => {
+    let soma = algo1 + algo2
+    exercicio1D(soma)
+}
+exercicio2D(2,3)
