@@ -1,14 +1,10 @@
 //Iniciando Revisão Planner
 
-let criarTarefa = () =>{
+ let criarTarefa = () =>{
     let tarefas = document.getElementById('tarefa')
-    let diaSemana = document.getElementById('dias-semana')
+    let diaSemana = document.getElementById('dias-semana')    
     
-    
-
-    document.getElementsByName('dias-semana.value').innerHTML += `<p> ${tarefas.value}</p>`
+    document.getElementById(diaSemana.value).innerHTML += "<p>- " + tarefa.value + "</p>" 
     tarefas.value = ""
-
-    console.log(tarefas.value)
-    console.log (diaSemana.value)
-}
+   
+ } 
