@@ -99,3 +99,6 @@ let verificaArrayPar = (numeros) => {
     console.log('Exercicio6 (c):', numerosPares.length)
 }
 verificaArrayPar(array)
+
+//Iniciando DESAFIO
+
