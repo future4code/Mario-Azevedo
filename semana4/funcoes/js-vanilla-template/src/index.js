@@ -1,140 +1,156 @@
-/* Exercício 1
-a) Será impresso no console 10 e 50
-b) O código simplesmente rodaria, sem que fosse printado.
-Não apareceria nada no console.
-*/
+//REVISÂO
 
-/*
-Exercício 2
+//Exercício 1
 
-a) Sera impressa no console Darvas e Caio
- b) Amanda e Caio
-  */
+//(a)
+//Será impresso: 10 e 50
 
-/* Exercício 3
+//(b)
+//Caso retire os console não será apresentado 
+//nada em tela
 
-O código está verificando se is numeros do array são pares
-e armazenando em arrayFinal os seus quadrados.
+//Exercício 2
 
-Array = numeros
-x = valores
-ArrayFinal = quadrados */
+//(a)
+//Darvas e Caio
+
+//(b)
+//Amanda e Caio
+
+//Exercício 3
+//A função está verificando se os elementos são
+//pares, caso positivo, eleva ele ao quadrado
+//e armazena na varial arrayFinal.
+//O melhor nome seria paresQuadrados
 
 //Exercício 4
+
 //(a)
-
-let informacao = () => {
-    console.log('Exercício 4 (a): Eu sou o Mário , tenho 23 anos, moro na cidade de Paraíba do Sul e estou estudante.')
+let exercicio4a = () =>{
+    console.log('Exercício 4 (a): Eu sou Caio, Tenho 23 anos, moro em São Paulo e sou estudante')
 }
-
-informacao()
-
-//(b)
-
-  let nome  
-  let idade  
-  let endereco  
-  let estudante 
-  
-  function informacao2(nome, idade, endereco, estudante){
-      if(estudante === true){
-          console.log('Exercício 4 (b): Eu sou o ',nome,' tenho ',idade,' anos, moro na cidade de ',endereco,' e estou estudante','.')
-      }
-
-  }
- 
-  informacao2('Mário', 36, 'Paraíba do Sul', true)
-
-  //Exercício 5
-  //(a)
-  
-  let numeros = (numero1,numero2) => {
-      let soma = numero1 + numero2
-      console.log('Exercício5 (a): ',soma)
-      return soma
-  }
-
-  numeros(2,3)
+exercicio4a()
 
 //(b)
+let exercicio4b = (nome, idade, cidade, estudante) => {
+    console.log(`Exercício 4 (b): Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade}
+   e ${estudante} estudante. `)
+}
+exercicio4b('Caio', 23, 'São Paulo', 'sou')
 
-let numeros2 = (numero3,numero4) => {
-    if(numero3>=numero4){
-        let resultado = true
-        console.log('Exercício 5 (b): ',resultado)
+//Exercício 5
+
+//(a)
+let numeros = (numero1, numero2) =>{
+    let soma = numero1 + numero2
+    console.log('Exercicio 5 (a): ',soma)
+    return soma
+}
+numeros (1,1)
+
+//(b)
+let numeros2 = (numero3, numero4) => {
+    if(numero3 => numero4){
+        console.log("Exercício 5 (b): ",true)
+        return true
     }
 }
-
-numeros2(4,4)
+numeros2(3,3)
+numeros2(5,4)
 
 //(c)
 
-
-
-let repete = (nome) =>{
-    for(let contador = 0; contador <10; contador ++){
-        console.log(nome)
+let imprime10 = (mensagem) =>{
+    let contador = 0
+    for(contador = 0; contador < 10; contador++){
+        console.log('Exerciocio 5 (c): ', mensagem)
     }
-    }
+}
 
-repete('Resposta Exercício 5 (c): Mário')
+imprime10('Imprime 10 vezes')
 
 //Exercício 6
 
-//(a)
-
 const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 
-function quantidade(){
-    console.log('Resposta Exercicio 6 (a): ',array.length)
+//(a)
+let quantidadeNoArray = (numeros) => {
+    console.log('Resposta 6 (a)', numeros.length)
 }
-
-quantidade()
+quantidadeNoArray(array)
 
 //(b)
 
-function conferencia(valor){
-      if(valor%2 === 0){
-        console.log('Resposta Exercício 6 (b): Este número é par: ',true)
-    }else(
-        console.log('Esse número é par: ',false)
-    )
-
+let verificaSePar = (numero) => {
+    if(numero%2 === 0){
+        console.log('Resposta: 6 (b) :',true)
+    }
 }
+verificaSePar(2)
 
-conferencia(20)
+//(c)
+let verificaArrayPar = (numeros) => {
+    let numerosPares = []
+    for(let numero of numeros){
+        if(numero%2 === 0){
+            numerosPares.push(numero)
+        }
+    }
+    console.log('Exercicio6 (c):', numerosPares.length)
+}
+verificaArrayPar(array)
+
+//Iniciando DESAFIO
+
+//Exercicio 1 desafio
+
+//(1)
+let exercicio1D = (algo) => {
+    console.log("Exercicio 1 Desafio (1): ",algo)
+}
+exercicio1D('Funcionando')
+
+//(2)
+
+let exercicio2D = (algo1, algo2) => {
+    let soma = algo1 + algo2
+    exercicio1D(soma)
+}
+exercicio2D(2,3)
+
+//Exercício 2 desafio
+
+const numero = [0, 8, 23, 16, 10, 15, 41, 12, 13]
+
+//(a)
+let numerosParesQuadrados = (numero) => {
+    let numerosQuadrados = []
+    for(let num of numero){
+        if(num%2 === 0){
+            let multiplica = (num * num)
+            numerosQuadrados.push(multiplica)
+        }
+    }
+    console.log('Resposta 2 Desafio (a): ', numerosQuadrados)
+}
+numerosParesQuadrados(numero)
+
+//(b)
+let maiorNumero = (numero) => {
+    console.log('Resposta 2 Desafio (b): ',Math.max(...numero))
+}
+maiorNumero(numero)
 
 //(c)
 
-let par = []
-function pares(){
-for (let lista of array){
-    
-    if(lista%2 === 0){
-        let resultado = (lista%2 ===0)
-        par.push(resultado)       
-        
-
-        
-    }
-    
- }
- console.log('Resposta Exercício 6 (c): A quantidade de números par é ',par.length)
+let maiorIndex = (valor) =>{
 }
 
 
-pares(array)
-
 //(d)
 
+let arrayInvertido = (numeros) =>{
+    console.log('Resposta 2 Desafio (d)', numeros.reverse())
+}
 
-function compara(){
-    for (let listagem of array){
-        if(listagem%2===0){
-            console.log('Resposta Exercício 6 (d): Esse número é par')
-        }else(
-            console.log('Resposta Exercício 6 (d) Esse número é impar')
-        )
-    }}
-
-    compara(array)
+arrayInvertido(numero)
