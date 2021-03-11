@@ -1,0 +1,23 @@
+.Habilidades-container {
+    display: flex;
+    align-items: center;
+    
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 200px;
+    flex-direction: row;
+}
+
+.Habilidades-container > img {
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.Habilidades-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
