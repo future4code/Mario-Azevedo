@@ -59,59 +59,7 @@ font-size:12px;
 
 export class Formulario extends React.Component{
 
-    state ={
-        usuario:[],        
-        inputNome:"",
-        inputEmail:"",
-    } 
-
-    componentDidMount(){
-        this.getListaVoluntario();
-    }
-
-    pegarInputNome =(event) => {       
-        this.setState({inputNome: event.target.value})
-    }
-
-    pegarInputEmail =(event) => {
-        this.setState({inputEmail: event.target.value})
-     
-    }
-
-    getListaVoluntario = () => {
-        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",{
-           headers: {
-               Authorization: 'mario-azevedo-cruz'
-           } 
-        }).then((resposta) => {
-            this.setState({usuario: resposta.data})
-            
-        })
-    }
-    
-
-
-       cadastrarVoluntario = () => {
-        const body = {
-            name: this.state.inputNome,
-            email: this.state.inputEmail,
-        };
-        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users", body, {
-            headers: {
-                Authorization: "mario-azevedo-cruz"
-            }
-        }).then((resposta) => {
-            this.getListaVoluntario()
-            this.setState({inputValue:''})
-            alert("Voluntário cadastrado com sucesso")
-        })
-        // console.log(this.state.inputNome)
-        // console.log(this.state.inputEmail)
-
-
-    }
-
-
+   
     render(){
         return(
             <div> <Geral>
