@@ -145,17 +145,28 @@ export class Formulario extends React.Component{
         this.setState({inicial:false})
     }
 
+    deletarUsuario = (id) =>{
+        axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`,{
+            headers: {
+                Authorization: 'mario-azevedo-cruz'
+            }
+        }).then((resposta)=> {
+            if(window.confirm ("Você gostaria de deletar esse voluntário?")){
+                alert("Voluntário deletado com sucesso!")
+            this.getListaVoluntarios()}
+        })
+    }
 
-    render(){   
-            
+
+    render(){               
         
         const listaVoluntarioFinal = this.state.usuarios.map((pessoas) => {
             return(
-                <Deletar>
-                    <Nomes key={pessoas.id}>{pessoas.name}</Nomes> <Botao2>Deletar</Botao2>
+                <Deletar key={pessoas.id}>
+                    <Nomes key={pessoas.id}>{pessoas.name}</Nomes> <Botao2 onClick={() => this.deletarUsuario(pessoas.id)}>Deletar</Botao2>                                       
                 </Deletar>
-            
-            )            
+               
+            )           
             
         });
 
@@ -175,15 +186,13 @@ export class Formulario extends React.Component{
             <Ident>Agora digite seu e-mail!</Ident>
             <Desc onChange={this.InputEmail} value ={this.state.inputEmail} type='email'  placeholder= {'Digite seu e-mail aqui! :)'}/>
             <Botao onClick={this.criandoUsuario}  >Cadastrar!</Botao>
-            </Cadastro>
-
-            
+            </Cadastro>           
 
         </Geral>) }
 
-            {!this.state.inicial && this.state.usuarios.length >0 ? <ul>{listaVoluntarioFinal}</ul> :<Ir onClick={this.paginaVoluntario}>Clique aqui para ir a nossa lista de Voluntários?</Ir>}       
+            {!this.state.inicial && this.state.usuarios.length >0 ? <ul>{listaVoluntarioFinal}  <Ir onClick={this.paginaInicial}>Clique aqui para voltar ao formulário!</Ir></ul> :<Ir onClick={this.paginaVoluntario}>Clique aqui para ir a nossa lista de Voluntários!</Ir>}       
                  
-        
+          
         </div>
            
         )
