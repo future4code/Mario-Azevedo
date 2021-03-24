@@ -80,19 +80,12 @@ const Botao2 = styled.button`
  color:white;
 `;
 
-const Ir = styled.b`
-font-size:15px;
-cursor: pointer;
-
-`;
-
-export class Formulario extends React.Component{
+export class ListaVoluntario extends React.Component{
 
        state = {
         usuarios: [],
         inputNome: '',
         inputEmail:'',
-        inicial: true,
       
     };
 
@@ -135,19 +128,9 @@ export class Formulario extends React.Component{
         }).catch((erro) => {
             alert('Atenção - Voluntário não cadastrado', erro.response.data)
         })
-    };
-
-    paginaInicial = () =>{
-        this.setState({inicial:true})
     }
 
-    paginaVoluntario = () => {
-        this.setState({inicial:false})
-    }
-
-
-    render(){   
-            
+    render(){       
         
         const listaVoluntarioFinal = this.state.usuarios.map((pessoas) => {
             return(
@@ -160,29 +143,16 @@ export class Formulario extends React.Component{
         });
 
         return(
+            <div> 
+                
+                <Geral>
+                {this.state.usuarios.length >0 ? <ul>{listaVoluntarioFinal}</ul> : <p>Carregando...</p>} 
+                 </Geral>
 
-            <div>             
-           
-           {this.state.inicial &&   
-          
-          ( <Geral>
-
-            <Imagem/>
-            <Cadastro>
-            <Titulo>Seja nosso Voluntário!</Titulo>
-            <Ident>Qual seu nome?</Ident>
-             <Desc onChange={this.InputNome}  value ={this.state.inputNome} placeholder={'Digite seu nome aqui! :)'} />
-            <Ident>Agora digite seu e-mail!</Ident>
-            <Desc onChange={this.InputEmail} value ={this.state.inputEmail} type='email'  placeholder= {'Digite seu e-mail aqui! :)'}/>
-            <Botao onClick={this.criandoUsuario}  >Cadastrar!</Botao>
-            </Cadastro>
-
-            
-
-        </Geral>) }
-
-            {!this.state.inicial && this.state.usuarios.length >0 ? <ul>{listaVoluntarioFinal}</ul> :<Ir onClick={this.paginaVoluntario}>Clique aqui para ir a nossa lista de Voluntários?</Ir>}       
+      
                  
+           
+        
         
         </div>
            
